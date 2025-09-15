@@ -3,148 +3,131 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Spotify - No Copyright Songs</title>
+    <title>SR-Music</title>
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 <body>
-    <nav>
-        <ul>
-            <li class="brand"><img src="logo.png" alt="Spotify">Spotify</li>
-            <li>Home</li>
-            <li>About</li>
-            <li class="page-title">Best of NCS - no copyright songs</li>
-        </ul>
-    </nav>
-
-    <div class="container">
-        <div class="songlist">
-            <h2>Playlist</h2>
-            <div class="songItemContainer">
-                <div class="songitem" data-index="0">
-                    <img src="1.jpg" alt="Let me Love You">
-                    <span class="songName">Let me Love You</span>
-                    <span class="songListPlay">
-                        <span class="timeStamp">05:34</span>
-                        <i class="far songItemPlay fa-solid fa-circle-play"></i>
-                    </span>
-                </div>
-                <div class="songitem" data-index="1">
-                    <img src="4.jpg" alt="ওরা মনের গোপন চেনে না">
-                    <span class="songName">ওরা মনের গোপন চেনে না</span>
-                    <span class="songListPlay">
-                        <span class="timeStamp">04:22</span>
-                        <i class="far songItemPlay fa-solid fa-circle-play"></i>
-                    </span>
-                </div>
-                <div class="songitem" data-index="2">
-                    <img src="3.jpg" alt="Batto ko teri">
-                    <span class="songName">Batto ko teri by arijit</span>
-                    <span class="songListPlay">
-                        <span class="timeStamp">03:45</span>
-                        <i class="far songItemPlay fa-solid fa-circle-play"></i>
-                    </span>
-                </div>
-                <div class="songitem" data-index="3">
-                    <img src="4.jpg" alt="Mohabat barsa dena tu">
-                    <span class="songName">Mohabat barsa dena tu</span>
-                    <span class="songListPlay">
-                        <span class="timeStamp">04:18</span>
-                        <i class="far songItemPlay fa-solid fa-circle-play"></i>
-                    </span>
-                </div>
-                <div class="songitem" data-index="4">
-                    <img src="5.jpg" alt="bengali romantic song">
-                    <span class="songName">bengali romantic song</span>
-                    <span class="songListPlay">
-                        <span class="timeStamp">03:56</span>
-                        <i class="far songItemPlay fa-solid fa-circle-play"></i>
-                    </span>
-                </div>
-                <div class="songitem" data-index="5">
-                    <img src="6.jpg" alt="Tu bhi royega Mahi">
-                    <span class="songName">Tu bhi royega Mahi</span>
-                    <span class="songListPlay">
-                        <span class="timeStamp">04:32</span>
-                        <i class="far songItemPlay fa-solid fa-circle-play"></i>
-                    </span>
-                </div>
-                <div class="songitem" data-index="6">
-                    <img src="7.jpg" alt="O Sajna x Pagol Ami Already">
-                    <span class="songName">O Sajna x Pagol Ami Already</span>
-                    <span class="songListPlay">
-                        <span class="timeStamp">03:28</span>
-                        <i class="far songItemPlay fa-solid fa-circle-play"></i>
-                    </span>
-                </div>
-                <div class="songitem" data-index="7">
-                    <img src="8.jpg" alt="Ami keno Bar Bar Preme Pore jai">
-                    <span class="songName">Ami keno Bar Bar Preme Pore jai</span>
-                    <span class="songListPlay">
-                        <span class="timeStamp">04:12</span>
-                        <i class="far songItemPlay fa-solid fa-circle-play"></i>
-                    </span>
-                </div>
-                <div class="songitem" data-index="8">
-                    <img src="9.jpg" alt="Tera Hoke Rahoon">
-                    <span class="songName">Tera Hoke Rahoon</span>
-                    <span class="songListPlay">
-                        <span class="timeStamp">03:50</span>
-                        <i class="far songItemPlay fa-solid fa-circle-play"></i>
-                    </span>
-                </div>
-                <div class="songitem" data-index="9">
-                    <img src="2.jpg" alt="Chand Chupa Badal Main">
-                    <span class="songName">Chand Chupa Badal Main</span>
-                    <span class="songListPlay">
-                        <span class="timeStamp">04:05</span>
-                        <i class="far songItemPlay fa-solid fa-circle-play"></i>
-                    </span>
-                </div>
+    <div class="sidebar">
+        <div class="logo">
+            <img src="logo.jpg" style="border-radius: 100%;" alt="Spotify">
+        </div>
+        
+        <div class="sidebar-menu">
+            <div class="menu-item active">
+                <i class="fas fa-home"></i>
+                <span>Home</span>
+            </div>
+            <div class="menu-item">
+                <i class="fas fa-search"></i>
+                <span>Search</span>
+            </div>
+            <div class="menu-item">
+                <i class="fas fa-book"></i>
+                <span>Your Library</span>
             </div>
         </div>
 
-        <div class="songBaner">
-            <img src="1.jpg" alt="Album Art" class="albumArt">
-            <div class="songDetails">
-                <h3 class="songTitle">Let me Love You</h3>
-                <p class="artist">Unknown Artist</p>
+        <div class="sidebar-playlists">
+            <div class="playlist-header">
+                <i class="fas fa-plus-circle"></i>
+                <span>Create Playlist</span>
             </div>
-            <div class="volumeControl">
-                <i class="fas fa-volume-up volumeIcon"></i>
-                <input type="range" min="0" max="100" value="80" class="volumeSlider">
+            <div class="playlist-item active">
+                <span>Best of NCS</span>
+            </div>
+            <div class="playlist-item">
+                <span>Chill Vibes</span>
+            </div>
+            <div class="playlist-item">
+                <span>Workout Mix</span>
+            </div>
+            <div class="playlist-item">
+                <span>Focus Time</span>
             </div>
         </div>
     </div>
 
-    <div class="bottom">
-        <div class="songInfo">
-            <img src="playing.gif" alt="Playing" id="gif">
-            <span id="mastersongName">Let me Love You</span>
-        </div>
-
-        <div class="playerControls">
-            <div class="icons">
-                <i class="fa-solid fa-backward-step" id="previous"></i>
-                <i class="fa-solid fa-circle-play" id="masterPlay"></i>
-                <i class="fa-solid fa-forward-step" id="next"></i>
+    <div class="main-content">
+        <div class="topbar">
+            <div class="navigation">
+                <i class="fas fa-chevron-left"></i>
+                <i class="fas fa-chevron-right"></i>
             </div>
-            <div class="progressArea">
-                <span class="currentTime">0:00</span>
-                <input type="range" min="0" max="100" value="0" id="myProgressBar">
-                <span class="songDuration">0:00</span>
+            <div class="user-menu">
+                <div class="upgrade-btn">Upgrade</div>
+                <div class="user-profile">
+                    <i class="fas fa-user"></i>
+                    <span>User</span>
+                    <i class="fas fa-caret-down"></i>
+                </div>
             </div>
         </div>
 
-        <div class="extraControls">
+        <div class="content-header">
+            <h1 style="display: flex;align-items: center;justify-content: center;">SR Music</h1>
+            <div class="header-actions">
+                <button class="play-all-btn">
+                    <i class="fas fa-play"></i>
+                    Play All
+                </button>
+                <button class="shuffle-btn">
+                    <i class="fas fa-random"></i>
+                </button>
+            </div>
+        </div>
+
+        <div class="song-list-container">
+            <div class="song-list-header">
+                <div class="header-number">#</div>
+                <div class="header-title">Title</div>
+                <div class="header-album">Album</div>
+                <div class="header-duration">
+                    <i class="fas fa-clock"></i>
+                </div>
+            </div>
+
+            <div class="song-list">
+                <!-- Songs will be populated by JavaScript -->
+            </div>
+        </div>
+    </div>
+
+    <div class="player">
+        <div class="song-info">
+            <img src="images/1.jpg" alt="Album Cover" class="current-song-img">
+            <div class="song-details">
+                <div class="song-name">Let Me Love You</div>
+                <div class="artist-name">Unknown Artist</div>
+            </div>
+            <div class="like-btn">
+                <i class="far fa-heart"></i>
+            </div>
+        </div>
+
+        <div class="player-controls">
+            <div class="control-buttons">
+                <i class="fas fa-random" id="shuffle"></i>
+                <i class="fas fa-step-backward" id="previous"></i>
+                <i class="fas fa-play-circle" id="play"></i>
+                <i class="fas fa-step-forward" id="next"></i>
+                <i class="fas fa-repeat" id="repeat"></i>
+            </div>
+            <div class="progress-container">
+                <span class="current-time">0:00</span>
+                <div class="progress-bar">
+                    <div class="progress"></div>
+                </div>
+                <span class="total-time">3:45</span>
+            </div>
+        </div>
+
+        <div class="volume-controls">
             <i class="fas fa-list"></i>
-            <i class="fas fa-random"></i>
-            <i class="fas fa-redo"></i>
-            <i class="fas fa-volume-up" id="volumeButton"></i>
-        </div>
-
-        <div class="volumePopup">
-            <input type="range" min="0" max="100" value="80" id="volumePopupSlider">
+            <i class="fas fa-volume-up"></i>
+            <div class="volume-bar">
+                <div class="volume-level"></div>
+            </div>
         </div>
     </div>
 
