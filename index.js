@@ -306,3 +306,36 @@ function initializePlayer() {
 
 // Initialize the player when the window loads
 window.addEventListener('load', initializePlayer);
+
+
+
+// Mobile menu functionality
+const mobileMenuBtn = document.createElement('button');
+mobileMenuBtn.className = 'mobile-menu-btn';
+mobileMenuBtn.innerHTML = '<i class="fas fa-bars"></i>';
+document.querySelector('.topbar').prepend(mobileMenuBtn);
+
+const sidebar = document.querySelector('.sidebar');
+const overlay = document.createElement('div');
+overlay.className = 'overlay';
+document.body.appendChild(overlay);
+
+mobileMenuBtn.addEventListener('click', () => {
+    sidebar.classList.toggle('active');
+    overlay.classList.toggle('active');
+});
+
+overlay.addEventListener('click', () => {
+    sidebar.classList.remove('active');
+    overlay.classList.remove('active');
+});
+
+// Close menu when clicking on a menu item
+document.querySelectorAll('.menu-item, .playlist-item').forEach(item => {
+    item.addEventListener('click', () => {
+        if (window.innerWidth < 768) {
+            sidebar.classList.remove('active');
+            overlay.classList.remove('active');
+        }
+    });
+});
